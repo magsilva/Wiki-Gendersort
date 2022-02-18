@@ -1,0 +1,5 @@
+include requirements.txt
+include Wiki_Gendersort.py
+include Names.txt
+include NamesOut.txt
+include data_compare/*

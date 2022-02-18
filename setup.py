@@ -1,21 +1,23 @@
-# -*- coding: utf-8 -*-
-"""
-Run this code to include the wiki-gendersort class in your Python environment
-"""
+from __future__ import with_statement
 
 import os
-import site
 
-st_pkg = site.getsitepackages()[0]
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
-cwd = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(os.path.dirname(__file__), "requirements.txt"), 'r') as f:
+    requirements = [r.strip() for r in f.read().splitlines()]
 
-paths = []
-paths.append(os.path.join(cwd, 'src'))
-
-filepath = os.path.join(st_pkg, 'wiki-gendersort.pth')
-
-with open(filepath, 'w') as FILE:
-    for path in paths:
-        FILE.write(path)
-        FILE.write('\n')
+setup(
+    name='wiki_gendersort',
+    version='0.1',
+    packages=[],
+    url='',
+    author='PowerToFly.com',
+    author_email='developers@powertofly.com',
+    description='...',
+    include_package_data=True,
+    install_requires=requirements
+)
