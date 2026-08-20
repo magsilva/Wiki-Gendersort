@@ -9,10 +9,10 @@ setup(
     name='wiki_gendersort',
     version='0.1',
     packages=[],
-    url='',
-    author='PowerToFly.com',
-    author_email='developers@powertofly.com',
-    description='...',
+    url='https://github.com/nicolasberube/Wiki-Gendersort',
+    author='Nicolas Bérubé',
+    author_email='nicolas.berube.3@umontreal.ca',
+    description='Wiki-Gendersort: automatic gender detection using first names in Wikipedia',
     include_package_data=True,
     install_requires=requirements
 )
